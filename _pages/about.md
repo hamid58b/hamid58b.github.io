@@ -12,7 +12,7 @@ I'm an experienced Research Engineer with a Ph.D. in Computer Science, specializ
 ### What I'm Doing
 - 🔭 **Researching Machine Learning**: Enhancing model explainability and reliability from a software engineering perspective, including detecting bugs and suggesting fixes in ML programs.
 - 💬 **Building Domain-Specific Large Language Models**: Focusing on applications in finance while prioritizing data privacy and security.
-- 🔍 **Multi-Agent Systems and Distributed Systems**: Using multi-agent systems to optimize parallelization and storage efficiency in bioinformatics.
+- 🔍 **Agenst*: Enhancing domain-specific LLMs for targeted, efficient outputs..
 
 
 ### What I'm Reading

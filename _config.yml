@@ -21,7 +21,7 @@ repository               : "hamid58b/hamidbagheri.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "hbagheri-sketch.jpg"
+  avatar           : "profile.png"
   name             : "Hamid Bagheri"
   pronouns         : # example: "she/her"  
   bio              : "PhD in Comp Sci | Applied ML | Data Scientist"

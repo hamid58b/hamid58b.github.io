@@ -12,7 +12,7 @@ title                    : "Hamid Bagheri "
 title_separator          : "-"
 name                     : &name "Hamid Bagheri"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://hamid58b.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "hamid58b/hamidbagheri.github.io"
 
@@ -21,33 +21,33 @@ repository               : "hamid58b/hamidbagheri.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "hbagheri-sketch.jpg"
   name             : "Hamid Bagheri"
   pronouns         : # example: "she/her"  
   bio              : "PhD in Comp Sci | Applied ML | Data Scientist"
-  location         : "Earth"
+  location         : "United States"
   employer         : "Iowa State University"
   uri              : # URL
   email            : "bagheri.hamid@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=h43c83MAAAAJ&view_op=list_works&sortby=pubdate"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  orcid            : "https://orcid.org/0000-0003-1540-7797"
+  pubmed           : # URL
   researchgate     : # URL
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "hamid58b"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

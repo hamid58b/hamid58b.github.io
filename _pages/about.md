@@ -7,33 +7,29 @@ redirect_from:
   - /about.html
 ---
 
-I'm an experienced Research Engineer with a Ph.D. in Computer Science, specializing in Machine Learning and Data Science with a strong emphasis on responsible AI. My research and professional work focus on enhancing the quality and trustworthiness of ML models, particularly in finance, agriculture, and bioinformatics.
+I'm an experienced Applied Scientist with a Ph.D. in Computer Science, specializing in Machine Learning and Data Science with a strong emphasis on responsible AI. 
 
-### What I'm Doing
-- 🔭 **Researching Machine Learning**: Enhancing model explainability and reliability from a software engineering perspective, including detecting bugs and suggesting fixes in ML programs.
-- 💬 **Building Domain-Specific Large Language Models**: Focusing on applications in finance while prioritizing data privacy and security.
-- 🔍 **Agenst**: Enhancing domain-specific LLMs for targeted, efficient outputs..
+- 📚 Researching Responsible AI: Exploring techniques for enhancing model explainability, fairness, privacy, security, safety, and human control in AI systems.
+- 💻 Building Domain-Specific AI Applications: Developing AI solutions for targeted domains like finance, while prioritizing responsible practices such as data privacy and secure model deployment.
+- 🔍 AI Agents: Enhancing domain-specific language models for efficient and trustworthy outputs.
 
-
-### What I'm Reading
-I am reading widely and sharing the learning through literature and practical applications in the field of AI. Consider subscribing to my notes and newsletter for updates:
+I am actively reading and sharing insights on responsible AI practices through literature reviews and practical applications. Consider subscribing to my notes and newsletter for updates:
 - [AI Responsibly - Notes and Newsletter](https://airesponsibly.substack.com/)
 
-### Contributions to Responsible AI
-I am reading about responsible AI practices and sharing quick summaries about these areas:
 
-- Explainability and Interpretability
-- Fairness and Biases
-- Privacy
-- Security
-- Safety
-- Accountability
-- Human Control and Interaction
-- Legal and Ethical Guidelines
-  
-Check out the [Responsible AI Paper Summaries](https://github.com/AIResponsibly/PaperSummaries) for more details.
+I am committed to promoting responsible AI practices and sharing quick summaries about these areas:
 
-  
+- 🔬 **Explainability and Interpretability**
+- ⚖️ **Fairness and Biases**
+- 🔒 **Privacy**
+- 🛡️ **Security**
+- ⚠️ **Safety**
+- 📜 **Accountability**
+- 👥 **Human Control and Interaction**
+- 📏 **Legal and Ethical Guidelines**
+
+Check out the [Responsible AI Paper Summaries](https://github.com/AIResponsibly/PaperSummaries) for more details.  
+
 <!-- 
 Feel free to connect with me on:
 - [LinkedIn](your-linkedin-url)

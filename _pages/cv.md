@@ -37,6 +37,34 @@ Experience
   *Aug 2015 - Dec 2020*  
   Built a domain-specific language for genomics, leveraging distributed systems to enhance parallelization and storage optimization. Implemented an automated data cleaning technique for mislabeled sequences in the large-scale database. Conducted in-depth analysis of data science bugs within R and Python, uncovering distinctive bug patterns and revealing insights for enhanced software practices.
 
+* **Deputy Manager of IT Center**  
+  *University of Kurdistan, Sanandaj, Iran*  
+  *Aug 2014 - Aug 2015*  
+  Trained and managed 20 junior IT employees and oversaw 30+ IT projects.  
+  Helped in establishing/budgeting/managing out-sourced projects.  
+  Optimized IT infrastructure and analytics for university-wide departments, streamlining operations.
+
+* **Senior Network Engineer - Analytics**  
+  *University of Kurdistan, Sanandaj, Iran*  
+  *Aug 2008 - Aug 2015*  
+  Analyzed network data that led to a refund of 9 months of internet bandwidth from the internet provider.  
+  Boosted data security with IP, encryption, and wireless protocols, cutting annual costs significantly.  
+  Enhanced incident response by analyzing network logs with Security Incident and Event Management systems.
+
+* **Software Engineer and Co-Founder of Saral System**  
+  *Saral System Kurdistan, Sanandaj, Iran*  
+  *Sep 2005 - Dec 2009*  
+  Led design and full-stack development of 10+ projects, including custom hotel and accounting systems.  
+  Developed tailored accounting, sales, and inventory systems for 100+ businesses, boosting efficiency.  
+  Innovated with automation across various projects, boosting user experience and workflow optimization.
+
+* **Software Engineering Part-time Lecturer**  
+  *Yazdan Panah University, Sanandaj, Iran*  
+  *Sep 2005 - Jan 2007*  
+  Taught Software Engineering, Database Systems in classes ranging 40-60 students.  
+  Supervised 15 undergraduate students for their final projects.
+
+
 Skills
 ======
 * **Programming Languages**: Python, R, Java, JavaScript, SQL, PySpark, Solidity, Rust

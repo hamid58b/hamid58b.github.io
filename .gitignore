@@ -12,3 +12,8 @@ node_modules
 package-lock.json
 
 .DS_Store
+
+# add ruby and bundler
+.ruby-version
+.bundle
+

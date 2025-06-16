@@ -16,4 +16,4 @@ package-lock.json
 # add ruby and bundler
 .ruby-version
 .bundle
-
+vendor/

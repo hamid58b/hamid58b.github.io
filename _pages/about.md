@@ -7,21 +7,29 @@ redirect_from:
   - /about.html
 ---
 
-# Building the Future of Enterprise AI
+# Transforming Mission-Critical Sectors with Applied AI
 
-Developing next-generation AI solutions that redefine how organizations interact with information and drive decision-making.
+We design, build, and deploy next‑generation AI products that let domain experts move faster, uncover deeper insights, and make better decisions.
 
-## Expertise
+## What We Do
 
-Leveraging breakthroughs in **generative AI** and **large language models**, custom solutions address enterprise challenges in finance, agriculture and emerging sectors.
+Our team blends state‑of‑the‑art research with pragmatic engineering to deliver production‑ready AI solutions for organizations that compete on knowledge.
 
-An approach that blends advanced research with practical deployment delivers tangible impact through responsible AI practices.
+## Core Offerings
 
-## Recent Focus Areas
+**Agentic Solutions** — Task‑oriented AI agents orchestrated through our proprietary frameworks to automate knowledge‑heavy workflows.
 
-- **Domain-Specific Language Models** tailored to specialized industries  
-- **Intelligent Data Processing** at enterprise scale  
-- **AI-Powered Decision Systems** for complex business scenarios  
+**Domain‑Tuned Language Models** — Fine‑tuned LLMs for life sciences, bioinformatics, and other data‑rich sectors—built to understand your vocabulary out of the box.
+
+**Purpose‑Built Data Cloud** — A vertically‑integrated platform that cleans, organizes, and scales your data and compute—purpose‑built for your domain.
+
+## Advantages
+
+**Accelerated Impact** — Turn strategic ideas into live solutions in mere weeks.
+
+**Trust by Default** — Security, privacy, and compliance integrated into every solution.
+
+**ROI-Obsessed** — Laser-focused on delivering measurable business growth.
 
 ---
 

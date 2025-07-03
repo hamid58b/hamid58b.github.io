@@ -33,6 +33,4 @@ Solutions built on proven AI research principles with an emphasis on explainabil
 
 ---
 
-*For partnership inquiries and detailed discussions, reach out directly.*
-
-**Contact**: [bagheri.hamid@gmail.com](mailto:bagheri.hamid@gmail.com)
+[**Contact Us**](/contact/){: .btn .btn--primary}

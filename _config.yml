@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "A10I"
+title: "A10i"
 title_separator: "-"
 name: &name "Hamid Bagheri"
 description: &description "personal description"

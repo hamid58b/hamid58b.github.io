@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A10i - The Infrastructure for AI-Powered Life Sciences</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc; /* slate-50 */
+      }
+      .hero-bg {
+        background-image: linear-gradient(
+            rgba(5, 25, 55, 0.8),
+            rgba(5, 25, 55, 0.8)
+          ),
+          url("https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2940&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+      }
+      .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <!-- Header -->
+    <header
+      id="header"
+      class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-blue-600">A10i</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="#problem"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >The Problem</a
+          >
+          <a
+            href="#solution"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Solution</a
+          >
+          <a
+            href="#features"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >Features</a
+          >
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-blue-600 transition-colors"
+            >About Us</a
+          >
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <button
+            onclick="openModal('loginModal')"
+            class="text-gray-600 hover:text-blue-600 font-medium transition-colors"
+          >
+            Login
+          </button>
+          <button
+            onclick="openModal('signupModal')"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-transform transform hover:scale-105"
+          >
+            Sign Up
+          </button>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <a href="#problem" class="block py-2 text-gray-600 hover:text-blue-600"
+          >The Problem</a
+        >
+        <a href="#solution" class="block py-2 text-gray-600 hover:text-blue-600"
+          >Solution</a
+        >
+        <a href="#features" class="block py-2 text-gray-600 hover:text-blue-600"
+          >Features</a
+        >
+        <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600"
+          >About Us</a
+        >
+        <div class="mt-4 pt-4 border-t border-gray-200 flex flex-col space-y-4">
+          <button
+            onclick="openModal('loginModal')"
+            class="w-full text-left text-gray-600 hover:text-blue-600 font-medium"
+          >
+            Login
+          </button>
+          <button
+            onclick="openModal('signupModal')"
+            class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-bg text-white">
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+            The Infrastructure for AI-Powered Life Sciences
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Turning petabytes of messy bio-data into discovery-ready insights.
+          </p>
+          <button
+            onclick="openModal('signupModal')"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition-transform transform hover:scale-105"
+          >
+            Request a Demo
+          </button>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section id="problem" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            The Problem: A Data Bottleneck
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            Life sciences are drowning in data. Researchers spend
+            <span class="font-bold text-blue-600">50-80% of their time</span>
+            just cleaning redundant, error-prone public databases. This siloed,
+            manual process slows discovery and delays critical breakthroughs.
+          </p>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+              <h3 class="font-bold text-xl mb-2 text-red-800">
+                Redundant Data
+              </h3>
+              <p class="text-red-700">
+                Public databases are filled with errors and duplications, making
+                reliable analysis difficult.
+              </p>
+            </div>
+            <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+              <h3 class="font-bold text-xl mb-2 text-yellow-800">
+                Siloed Pipelines
+              </h3>
+              <p class="text-yellow-700">
+                Data cleaning pipelines are isolated, hindering AI/ML adoption
+                and reproducibility.
+              </p>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg border border-gray-200">
+              <h3 class="font-bold text-xl mb-2 text-gray-800">
+                Slower Discovery
+              </h3>
+              <p class="text-gray-700">
+                The result is missed biological insights and a slower pace of
+                innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution Section with new Mermaid Diagram -->
+      <section id="solution" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              The A10i Solution
+            </h2>
+            <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+              Our platform ingests messy, siloed data from any source and uses a
+              suite of AI components to deliver clean, analysis-ready datasets
+              on demand.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8"
+            >
+              <!-- Data Inputs Section -->
+              <div class="flex flex-col items-center space-y-4">
+                <div
+                  class="bg-blue-50 p-6 rounded-lg border-2 border-blue-200 text-center min-w-[200px]"
+                >
+                  <div class="text-blue-800 font-bold text-lg mb-3">
+                    📊 Data Inputs
+                  </div>
+                  <div class="space-y-3">
+                    <div class="bg-white p-3 rounded border border-blue-300">
+                      <div class="text-blue-700 font-medium">Public Data</div>
+                      <div class="text-blue-600 text-sm">NCBI, PDB, ENA</div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-blue-300">
+                      <div class="text-blue-700 font-medium">
+                        Proprietary Data
+                      </div>
+                      <div class="text-blue-600 text-sm">User Uploads</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrow Right -->
+              <div
+                class="text-4xl text-gray-400 transform lg:rotate-0 rotate-90"
+              >
+                →
+              </div>
+
+              <!-- A10i Platform Section -->
+              <div class="flex flex-col items-center space-y-4">
+                <div
+                  class="bg-cyan-50 p-6 rounded-lg border-2 border-cyan-200 text-center min-w-[280px]"
+                >
+                  <div class="text-cyan-800 font-bold text-lg mb-4">
+                    🤖 A10i Platform
+                  </div>
+
+                  <!-- AI Core Subsection -->
+                  <div
+                    class="bg-cyan-100 p-4 rounded-lg border border-cyan-300 mb-4"
+                  >
+                    <div class="text-cyan-800 font-semibold mb-2">
+                      🧠 AI Core
+                    </div>
+                    <div class="space-y-2">
+                      <div class="bg-white p-2 rounded border border-cyan-400">
+                        <div class="text-cyan-700 text-sm font-medium">
+                          AI Curation Agents
+                        </div>
+                      </div>
+                      <div class="bg-white p-2 rounded border border-cyan-400">
+                        <div class="text-cyan-700 text-sm font-medium">
+                          LLM-Powered Annotation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Other Platform Components -->
+                  <div class="space-y-2">
+                    <div class="bg-white p-3 rounded border border-cyan-300">
+                      <div class="text-cyan-700 font-medium">
+                        GPU-Accelerated Compute
+                      </div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-cyan-300">
+                      <div class="text-cyan-700 font-medium">
+                        Unified Data Engine
+                      </div>
+                      <div class="text-cyan-600 text-sm">
+                        Versioning & Provenance
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrow Right -->
+              <div
+                class="text-4xl text-gray-400 transform lg:rotate-0 rotate-90"
+              >
+                →
+              </div>
+
+              <!-- Outputs Section -->
+              <div class="flex flex-col items-center space-y-4">
+                <div
+                  class="bg-green-50 p-6 rounded-lg border-2 border-green-200 text-center min-w-[200px]"
+                >
+                  <div class="text-green-800 font-bold text-lg mb-3">
+                    📈 Outputs
+                  </div>
+                  <div class="space-y-2">
+                    <div class="bg-white p-3 rounded border border-green-300">
+                      <div class="text-green-700 font-medium text-sm">
+                        Discovery-Ready Insights
+                      </div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-green-300">
+                      <div class="text-green-700 font-medium text-sm">
+                        Reproducible Datasets
+                      </div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-green-300">
+                      <div class="text-green-700 font-medium text-sm">
+                        APIs & SDKs
+                      </div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-green-300">
+                      <div class="text-green-700 font-medium text-sm">
+                        AI/ML Model Training
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Core Innovations
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our platform is built on a foundation of cutting-edge AI and data
+              engineering.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-blue-50 p-6 rounded-lg border border-blue-200 transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <h3 class="font-bold text-xl mb-2 text-blue-800">
+                Agentic AI Orchestration
+              </h3>
+              <p class="text-blue-700">
+                Domain-specific LLM agents autonomously clean, standardize, and
+                QC data, learning from expert feedback.
+              </p>
+            </div>
+            <div
+              class="bg-green-50 p-6 rounded-lg border border-green-200 transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <h3 class="font-bold text-xl mb-2 text-green-800">
+                Sequence-Native Compute
+              </h3>
+              <p class="text-green-700">
+                GPU-accelerated clustering and provenance tracking to detect
+                drift at petabyte scale.
+              </p>
+            </div>
+            <div
+              class="bg-purple-50 p-6 rounded-lg border border-purple-200 transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <h3 class="font-bold text-xl mb-2 text-purple-800">
+                Vertical Bio-Data Lakehouse
+              </h3>
+              <p class="text-purple-700">
+                A storage layer optimized for biological formats (FASTA, GFF)
+                instead of generic tables.
+              </p>
+            </div>
+            <div
+              class="bg-yellow-50 p-6 rounded-lg border border-yellow-200 transform hover:-translate-y-2 transition-transform duration-300"
+            >
+              <h3 class="font-bold text-xl mb-2 text-yellow-800">
+                Git-Style Dataset Versioning
+              </h3>
+              <p class="text-yellow-700">
+                Branching & time-travel for reproducible, policy-driven releases
+                of any "omics" dataset.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Our team brings over 20 years of combined expertise in software
+            engineering, AI/ML, and data science, with a deep specialization in
+            computational biology and bioinformatics. We are guided by an
+            advisory board with members from leading academic institutions and
+            biotechnology companies like Genentech and AWS, ensuring our
+            solutions meet the highest standards of scientific and technical
+            excellence.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-bold">A10i</h3>
+            <p class="text-gray-400">AI-Powered Life Sciences</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+          </div>
+        </div>
+        <div
+          class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm"
+        >
+          &copy; 2025 A10i LLC. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div
+      id="loginModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center modal-backdrop"
+    >
+      <div
+        class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md m-4 relative"
+      >
+        <button
+          onclick="closeModal('loginModal')"
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-center mb-6">Welcome Back</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              for="login-email"
+              class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="login-email"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="login-password"
+              class="block text-sm font-medium text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="login-password"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 font-semibold"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div
+      id="signupModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center modal-backdrop"
+    >
+      <div
+        class="bg-white rounded-lg shadow-xl p-8 w-full max-w-md m-4 relative"
+      >
+        <button
+          onclick="closeModal('signupModal')"
+          class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-center mb-6">Create Your Account</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              for="signup-email"
+              class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="signup-email"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="signup-password"
+              class="block text-sm font-medium text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="signup-password"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="signup-confirm-password"
+              class="block text-sm font-medium text-gray-700"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="signup-confirm-password"
+              class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 font-semibold"
+          >
+            Create Account
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript for Modals and Mobile Menu -->
+    <script>
+      // --- Mobile Menu Toggle ---
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // --- Modal Handling ---
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+          document.body.classList.add("overflow-hidden"); // Prevent background scrolling
+        }
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          document.body.classList.remove("overflow-hidden");
+        }
+      }
+
+      // Close modal if backdrop is clicked
+      window.addEventListener("click", function (event) {
+        if (event.target.classList.contains("modal-backdrop")) {
+          closeModal("loginModal");
+          closeModal("signupModal");
+        }
+      });
+    </script>
+  </body>
+</html>
